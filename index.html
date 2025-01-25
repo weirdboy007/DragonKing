@@ -1,73 +1,554 @@
-<!DOCTYPE html><!-- 文档类型说明 告诉浏览器按照HTML5的标准解析 -->
-<html lang="zh-CN"><!-- <html>为根标签 后面表示使用中国大陆语言 -->
-  
+<!DOCTYPE html>
+<html lang="zh-CN">
   <head>
-    <meta charset="utf-8"><!--文档字符编码-->
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <!--视口元标签 宽度设置设备宽度 缩放比例1.0-->
-    <title>个人界面 To孙志杰</title><!--标签页标题-->
-    <style>  
-      body {
-        margin: 0;
-      }
-    </style><!--页面主体样式设置 边距0-->
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>我的个人简介</title>
+
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.bootcdn.net/ajax/libs/bootstrap-icons/1.10.4/font/bootstrap-icons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/icon-animation.css" />
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon" />
   </head>
- 
+
   <body>
-    <!--模块一-->
-    <div style="
-    background-color: lightblue;
-    text-align:center;
-    padding:20px;
-    font-size：40px；
-    ">
+    <section id="hero">
+      <div class="hero-table">
+        <div class="hero-table-center">
+          <div class="container">
+            <div class="row justify-content-center">
+              <div class="col-lg-12" style="text-align: center">
+                <h5>Hello!I'M</h5>
+                <h1>Mr.孙 | 志杰 | 努力赚钱版</h1>
+                <h4>这是我的自我介绍🙋‍♂️ </h4>
+              </div>
+              <div class="hero-icon">
+                <a href="#about" style="color: black">
+                  <i class="bi bi-arrow-down-circle hero-icon-animation"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-      <h1 style="
-      font-size:40px;
-      
-      ">个人简介 </h1><br>
-      <img src="https://i.imgs.ovh/2025/01/25/LGHc.jpeg" alt="Lhz9.jpeg" height="400" style="border: 6px solid lightblue;  vertical-align:top; ">
-      <pre>      
-      <img src="https://i.imgs.ovh/2025/01/25/LxS6.png"  alt="LxS6.png"   width=device-width; style="border: 10px solid lightblue" > 
-    </div>
-    
-    <div style = "
-    
-    background:white;
-   margin - left: 200px;
-    font-size:28px;
-    text-align:center;
-    ">
-    <p>
-      掌握C\C++\Python\数据结构等，具有前端网页开发、微信小程序开发、客户端开发能力和经验。<br><br>
-      熟练运用MX、uvision等软件进行stm32单片机功能设计与开发；<br><br>
-      熟练使用Multisim仿真、PCB制图、万能板焊接；<br><br>
-      参加过“高级办公软件培训”，文档、表格处理经验丰富，熟悉PPT制作。<br><br>
-      英语读写能力强，六级通过后持续学习，具备英语交流能力。
-    </p>
-    </div>
+    <section id="nav" class="py-5">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+          <a class="navbar-brand" href="#">简历导航</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#about">
+                  个人介绍
+                  <span class="sr-only">(current)</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#service">服务列表</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#exhibition">作品展示</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#work">荣誉展示</a>
+              </li>
+              <!--
+                <li class="nav-item">
+                <a class="nav-link" href="#team">团队成员</a>
+              </li>
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#news">最近动态</a>
+              </li>
+              -->
+              <li class="nav-item">
+                <a class="nav-link" href="#footer">版权声明</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </section>
 
-	  <div style="
-    background-color: lightblue;
-    text-align:center;
-    padding:40px;
-    font-size:20px;    
-    ">
+    <section id="about" class="pt-5 py-5">
+      <div class="container">
+        <div class="row align-items-center pb-5">
+          <div class="col-lg-8">
+            <div class="mt-3">
+              <h2 class="sub-title">——————介绍一下我自己</h2>
+              <h4 class="mt-4">
+                Hello
+                <span class="font-weight-bold">I'm SUN同学</span>
+              </h4>
+              <p class="text-muted mt-4 introduce-text text-justify">
+                我叫孙志杰，今年22岁，就读于陕西科技大学-物联网工程专业。由于对计算机领域很感兴趣，并期待将来从事计算机方向的工作，
+                因而在校期间十分注重对专业课的学习，拥有扎实的C/C++语言和数据结构与算法基础，良好的编程风格;熟悉C++/Qt客户端开发;
+                熟悉css+jsp的html网页开发；熟悉PYTHON的UI界面开发设计；熟悉阿里云、MQTT服务器；
+                熟悉linux环境下的软件开发；
+              </p>
+              <div class="row">
+                <div class="col-md-6">
+                  <ul class="about-info">
+                    <li class="mt-3">
+                      姓名:
+                      <span class="text-muted ml-3">孙志杰</span>
+                    </li>
+                    <li class="mt-3">
+                      邮箱:
+                      <span class="text-muted ml-3">1178290306@qq.com</span>
+                    </li>
+                    <li class="mt-3">
+                      地址:
+                      <span class="text-muted ml-3">陕西科技大学</span>
+                    </li>
+                    <li class="mt-3">
+                      班级:
+                      <span class="text-muted ml-3">物联网213</span>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-6">
+                  <ul class="about-info">
+                    <li class="mt-3">
+                      生日:
+                      <span class="text-muted ml-3">2004-02-08</span>
+                    </li>
+                    <li class="mt-3">
+                      网站:
+                      <a href="https://weirdboy007.github.io//" target="_blank">
+                        <span class="text-muted ml-3">
+                          weirdboy007.github.io/
+                        </span>
+                      </a>
+                    </li>
+                    <li class="mt-3">
+                      电话:
+                      <span class="text-muted ml-3">188-5671-0602</span>
+                    </li>
+                    <li class="mt-3">
+                      学号:
+                      <span class="text-muted ml-3">202105020322</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="mt-4 pt-2">
+                <h5>
+                  任意门
+                  <span class="badge badge-pill badge-primary">
+                    点击跳转外站 <i class="bi bi-box-arrow-in-up-right"></i>
+                  </span>
+                </h5>
+                <a
+                  href="https://"
+                  class="btn btn-outline-danger btn-lg"
+                  target="_blank"
+                >
+                  我的
+                </a>
+                &emsp;
+                <a
+                  href="https://"
+                  class="btn btn-outline-success btn-lg"
+                  target="_blank"
+                >
+                  我的
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4">
+            <div class="mt-3 about-img">
+              <img
+                src="https://i.imgs.ovh/2025/01/25/TywL.jpeg"
+                alt="author"
+                class="img-fluid rounded-lg"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="row align-items-center mt-5">
+          <div class="col-lg-6">
+            <h4>技 术 栈</h4>
+            <p class="mt-3 text-muted introduce-text">
+              C++ 程序员，深刻理解 Object Oriented
+              Programming（面向对象编程）,深入学习STL提升开发效率；
+              熟悉客户端程序开发，微信小程序开发，Python界面及应用开发，html网页开发；
+              开发项目如“路线规划助手”客户端，双机通信系统-串口助手，音乐推荐系统（Python）等；
+              <br>另外开发物联网系统-“园区环境信息检测系统”，实现硬件驱动程序开发、短/长距离通信协议实现（中继节点/云端）、云服务器调用
+              以及物联网云平台开发、数据库等技术融合开发。
+            </p>
+          </div>
+          <div class="col-lg-6">
+            <div id="skills" class="pt-4 mt-4">
+              <div class="skill-bar mb-5">
+                <span class="skill-title">C/C++</span>
+                <div class="progress pg-h">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 90%"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                  <span class="skill-percent">90%</span>
+                </div>
+              </div>
 
-    <p>作者：孙志杰</p>
-    <br>
-    <a 
-      href="https://weirdboy007.github.io/DragonKing/webdev-01page.html"
-      target="_blank"
-      rel="noopener noreferrer"
-     
-      >
-      下一页(前端开发学习页面)
-    </a>
-<br>
-    </div>
-  
+              <div class="skill-bar mb-5">
+                <span class="skill-title">微信小程序开发</span>
+                <div class="progress pg-h">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 65%"
+                    aria-valuenow="65"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                  <span class="skill-percent">65%</span>
+                </div>
+              </div>
+
+              <div class="skill-bar mb-5">
+                <span class="skill-title">Python</span>
+                <div class="progress pg-h">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 50%"
+                    aria-valuenow="50"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                  <span class="skill-percent">50%</span>
+                </div>
+              </div>
+
+              <div class="skill-bar mb-5">
+                <span class="skill-title">Html</span>
+                <div class="progress pg-h">
+                  <div
+                    class="progress-bar"
+                    role="progressbar"
+                    style="width: 35%"
+                    aria-valuenow="35"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  ></div>
+                  <span class="skill-percent">35%</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="pt-5 pb-5 mt-5">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <div class="text-left">
+              <h2 class="sub-title">——————更好地了解我</h2>
+              <h4 class="mt-4">我所能提供的服务</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="card-deck mt-3">
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-alarm card-icon"></i>
+                <h5 class="card-title">工作准时</h5>
+                <h6 class="card-subtitle mb-2">一切都在预期之内</h6>
+                <p class="card-text ct">
+                  准时上班是对工作最起码的负责任的态度。这是对工作负责的开始，坚持准时上班可以强化您的责任感，对工作更有责任和追求。
+                </p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-arrow-left-right card-icon"></i>
+                <h5 class="card-title">换位思考</h5>
+                <h6 class="card-subtitle mb-2">你为我，我为你</h6>
+                <p class="card-text ct">
+                  在一个团队之中，只有换位思考，才可能增强凝聚力。
+                  对于一个管理者来说，换位思考的能力是能否成功进行管理的一个重要因素。
+                </p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-moon-stars card-icon"></i>
+                <h5 class="card-title">持续学习</h5>
+                <h6 class="card-subtitle mb-2">不进则退</h6>
+                <p class="card-text ct">
+                  信息时代，技术迭代飞快，只有保证工作效率的同时，节约时间不断学习，自我提升，才能更好满足客户的要求，适应市场的需求；
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-deck mt-5">
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-lightning card-icon"></i>
+                <h5 class="card-title">极速效率</h5>
+                <h6 class="card-subtitle mb-2">快到你不敢相信</h6>
+                <p class="card-text ct">
+                  一般工作的效率很高的人，他们都有一个属于自己的计划，在第二天的工作开始之前，他们就会提前做好自己的时间规划。
+                </p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-lightbulb card-icon"></i>
+                <h5 class="card-title">创新想法</h5>
+                <h6 class="card-subtitle mb-2">点子王就是我</h6>
+                <p class="card-text ct">
+                  创新意识是引领时代，引领市场的必然要求，只有思维上的领先才能真正实现行业的领先，产品的先进性。
+                   </p>
+              </div>
+            </div>
+            <div class="card shadow">
+              <div class="card-body">
+                <i class="bi bi-github card-icon"></i>
+                <h5 class="card-title">技能过硬</h5>
+                <h6 class="card-subtitle mb-2">实力才是硬道理</h6>
+                <p class="card-text ct">
+                  有清晰的的逻辑思维，对于问题能够快速得出模型及解决方案，自己不会进入死循环。对数据及算法敏感，喜欢精益求精。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="exhibition" class="pb-5 mt-5 pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="text-left">
+              <h2 class="sub-title">——————有什么</h2>
+              <h4 class="mt-4">看看之前的作品</h4>
+            </div>
+          </div>
+        </div>
+
+        <div class="row mt-4">
+          <div class="col-lg-12 pb-5">
+            <div class="bd-example">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-ride="carousel"
+              >
+                <ol class="carousel-indicators">
+                  <li
+                    data-target="#carouselExampleCaptions"
+                    data-slide-to="0"
+                    class="active"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleCaptions"
+                    data-slide-to="1"
+                  ></li>
+                  <li
+                    data-target="#carouselExampleCaptions"
+                    data-slide-to="2"
+                  ></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img
+                      src="https://i.imgs.ovh/2025/01/25/TZSx.png" alt="TZSx.png"
+                      class="d-block w-100"
+                      alt="carousel1"
+                    />
+                    <div class="carousel-caption d-none d-md-block"  style="
+                    color:red;
+                    
+                    ">
+                      <h5 style="font-size:40px;">音乐推荐系统-基于python的PyCharm实现</h5>
+                      <p style="
+                      font-size:30px;
+                      ">
+                        Tkinter用于界面开发，pyaudio/wave用于音频调用播放，以及RE模块等进行进行数据处理和操作绑定
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://i.imgs.ovh/2025/01/25/TjGr.png" alt="TaMM.png"
+                      class="d-block w-100"
+                      alt="carousel2"
+                    />
+                   <div class="carousel-caption d-none d-md-block"  style="
+                    color:red;
+                    
+                    ">
+                      <h5 style="font-size:40px;">双机系统-简单C程序+STM32程序设计实现</h5>
+                      <p style="
+                      font-size:20px;
+                      
+                      ">
+                       OLED 显示屏通过与单片机的连接，接收并显示发送和接收的信息。按键连接到单片机的 GPIO 引脚，
+                       通过检测引脚的电平变化来判断按键是否被按下，从而确定发送的数据类型。与 PC 上的串口调试软件通信，
+                       利用 UART 的通用特性，通过串口线将实验板与 PC 连接，实现数据的双向传输。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <img
+                      src="https://i.imgs.ovh/2025/01/25/Tfjh.png" alt="Tfjh.png"
+                      class="d-block w-100"
+                      alt="carousel3"
+                    />
+                    <div class="carousel-caption d-none d-md-block">
+                      <h5 style="font-size:40px; color:red;">创新创业设计-“路线规划小助手”</h5>
+                      <p style="
+                      font-size:20px;
+                      ">基于C++和Qt的路线规划助手客户端</p>
+                    </div>
+                  </div>
+                </div>
+                <a
+                  class="carousel-control-prev"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a
+                  class="carousel-control-next"
+                  href="#carouselExampleCaptions"
+                  role="button"
+                  data-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="sr-only">Next</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     
-    
+    <section id="work" class="pb-5">
+      <div class="container">
+        <div class="text-center">
+          <div class="container">
+            <div class="row">
+              <div class="col-12 col-sm-6 col-md-3 mt-sm-0">
+                <div class="work-icon">
+                  <i class="bi bi-code wi"></i>
+                </div>
+                <div class="work-content">
+                  <span class="work-number">6k+ Lines</span>
+                </div>
+                <p class="mb-0">代 码 上 手</p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+                <div class="work-icon">
+                  <i class="bi bi-calendar-check wi"></i>
+                </div>
+                <div class="work-content">
+                  <span class="work-number">5+</span>
+                </div>
+                <p class="mb-0">项 目 完 成</p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+                <div class="work-icon">
+                  <i class="bi bi-award wi"></i>
+                </div>
+                <div class="work-content">
+                  <span class="work-number">3</span>
+                </div>
+                <p class="mb-0">目 前 获 奖</p>
+              </div>
+
+              <div class="col-12 col-sm-6 col-md-3 mt-sm-0 mt-5">
+                <div class="work-icon">
+                  <i class="bi bi-star wi"></i>
+                </div>
+                <div class="work-content">
+                  <span class="work-number">*</span>
+                </div>
+                <p class="mb-0">S t a r</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <section id="footer" class="py-5">
+      <div class="container">
+        <div class="row justify-content-center text-center">
+          <div class="col-md-12">
+            <div class="text-center">
+              <a href="#" class="logo">
+                <span>Mr.孙的个人简历</span>
+              </a>
+              <br /><br />
+              <p style="color: white">
+                2024 ©简历 Designed by
+                <a
+                  href="https://weirdboy007.github.io/"
+                  target="_blank"
+                  style="color: white"
+                >
+                  SUN同学
+                </a>
+              </p>
+              <p style="color: white">孙志杰</p>
+              <p style="color: white">完成日期：2024.12.30</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.6.0/js/bootstrap.min.js"></script>
+    <script src="./js/index.js"></script>
   </body>
 </html>
